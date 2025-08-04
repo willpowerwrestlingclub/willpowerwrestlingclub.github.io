@@ -1,0 +1,303 @@
+/* ======================Home Page=========================== */
+body {
+  background-color: #84dfff;
+}
+.heading,
+.heading2 {
+  display: flex;
+  justify-content: center;
+  color: #3b3486;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+
+.heading:hover {
+  background-color: #ff0000;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff0000;
+  padding: 3px;
+}
+.name {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.name:hover {
+  background-color: darkorange;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+#myVideo {
+  width: 60%;
+}
+.boxing {
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.boxing:hover {
+  background-color: #f5d5ae;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  color: grey;
+}
+.foot {
+  font-size: 15px;
+}
+/* ===========================Coach============================= */
+
+p {
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+}
+h3 {
+  color: #da1212;
+}
+.Damir {
+  display: flex;
+  justify-content: center;
+}
+
+/* ==============================Classes/Schedule/Prices========================= */
+table,
+th,
+td {
+  border: 5px solid red;
+  padding: 10px;
+}
+.main table {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #432c7a;
+}
+/* ==============================Gallery======================== */
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+.gal {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: 3px solid lightslategray;
+  transition: 1s;
+}
+.gal:hover {
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+.info {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: #432c7a;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: solid red;
+  color: #da1212;
+}
+.links:hover {
+  background-color: aquamarine;
+}
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  text-decoration: none;
+  text-align-last: center;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-envelope {
+  background: blueviolet;
+  color: white;
+  width: 30px;
+  padding: 20px;
+}
+.fa-phone {
+  background: orange;
+  color: white;
+  width: 30px;
+  padding: 20px;
+}
+.fa-whatsapp {
+  background: green;
+  color: white;
+  width: 30px;
+  padding: 20px;
+}
+.fa-instagram {
+  background: orangered;
+  color: white;
+  width: 30px;
+  padding: 20px;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+  width: 30px;
+  padding: 20px;
+}
+.location {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: #570530;
+}
+.heading3 {
+  display: flex;
+  justify-content: center;
+  color: #b22727;
+  font-size: 25px;
+  transition: 1s;
+}
+.heading3:hover {
+  color: #31087b;
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.press {
+  background-color: #eb6440;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 15px;
+  flex: 1;
+}
+.press:hover {
+  background-color: green;
+}
+.btnname {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.btnname:hover {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  text-shadow: #454546 0px 5px 0px;
+}
+
+.words {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ===============================Mobile Adaptation================================ */
+@media all and (max-width: 800px) {
+  body {
+    background-color: #f8c4b4;
+  }
+  .heading,
+  .name {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .heading2 {
+    font-size: 18px;
+  }
+  .place {
+    font-size: 15px;
+  }
+  .name {
+    font-size: 12px;
+  }
+     
+  #myVideo {
+    width: 100%;
+  }
+  .links,
+  .gal {
+    border: none;
+  }
+  
+}
+@media all and (max-width: 500px) {
+  body {
+    background-color: #CDFCF6;
+  }
+  .heading,
+  .place {
+    text-align: center;
+    font-size: 16px;
+  }
+   .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+  .row1,
+  .row2 {
+    font-size: 10px;
+  }
+  .box,
+  .info {
+    font-size: 15px;
+  }
+  .heading2,
+  .heading3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .table,
+  .th,
+  .td {
+    border: 3px solid darkblue;
+  }
+  .main table {
+    font-size: 7px;
+    padding: 3px;
+  }
+  .links, .form, .btn{
+     display: flex;
+    justify-content: space-evenly;
+  }
+  .fa{
+    padding:10px;
+    }
+}
